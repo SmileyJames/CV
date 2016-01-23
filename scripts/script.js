@@ -4,7 +4,6 @@ window.onload = function() {
 
     var chameleons = document.getElementsByClassName("chameleon");
     var angles = [0, 30, 180, 330];
-    //var angles = [0, 0, 0, 0];
     var shades = [1.0, 0.6, 0.7, 0.8];
     var baseHue = Math.floor(Math.random() * 360);
     var light = Math.floor(Math.random() * (80 - 60)) + 60;
@@ -25,9 +24,9 @@ window.onload = function() {
         if (locked) return;
         locked = true;
         setTimeout(function() {
-            hue = (hue + 3) % 360;
+            hue = (hue + 9) % 360;
             draw(hue);
             locked = false;
-        }, 25);
+        }, 60);
     });
 }
