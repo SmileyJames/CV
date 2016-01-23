@@ -24,20 +24,19 @@
         </svg>
         <script>
             var chameleons = document.getElementsByClassName("chameleon");
-            var randPercent = function(min, max) {
-                return String(Math.floor(Math.random() * (max - min)) + min) + "%";
-            }
-            var angles = [0, 30, 180, 330];
             //var angles = [0, 20, 40, 60];
+            var angles = [0, 30, 180, 330];
+            var shades = [1.0, 0.5, 0.7, 0.8];
+            var h, l, hsl;
             var hue = Math.floor(Math.random() * 360);
-            var h, hsl;
-            var s = randPercent(80, 30);
-            var l = randPercent(80, 50);
-            angles.forEach(function(angle, i) {
-                h = (hue + angle) % 360;
+            var s = String(Math.floor(Math.random() * (80 - 30)) + 30) + "%";
+            var light = Math.floor(Math.random() * (80 - 50)) + 50;
+            for (var i = 0; i < chameleons.length; i++) {
+                h = (hue + angles[i]) % 360;
+                l = String(Math.floor(light * shades[i])) + "%";
                 hsl = "hsl(" + h + "," + s + "," + l + ")";
                 chameleons[i].setAttribute("fill", hsl);
-            });
+            }
         </script>
     </body>
 </html>
