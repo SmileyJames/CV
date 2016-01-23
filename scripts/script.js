@@ -4,7 +4,8 @@ window.onload = function() {
 
     var chameleons = document.getElementsByClassName("chameleon");
     var angles = [0, 30, 180, 330];
-    var shades = [1.0, 0.5, 0.7, 0.8];
+    //var angles = [0, 0, 0, 0];
+    var shades = [1.0, 0.6, 0.7, 0.8];
     var baseHue = Math.floor(Math.random() * 360);
     var light = Math.floor(Math.random() * (80 - 60)) + 60;
     var s = String(Math.floor(Math.random() * (80 - 30)) + 30) + "%";
