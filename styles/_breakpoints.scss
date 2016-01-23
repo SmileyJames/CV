@@ -1,0 +1,16 @@
+$tera: 1920px;
+$giga: 1670px;
+$mega: 1400px;
+$kilo: 1000px;
+$milli: 800px;
+$micro: 450px;
+$nano: 587px;
+$pico: 400px;
+
+@mixin media($breakpoint)
+{
+    @media all and (max-width: $breakpoint)
+    {
+        @content;
+    }
+}

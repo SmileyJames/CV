@@ -11,14 +11,17 @@ $dwarf: 14;
 $hobbit: 12;
 $goblin: 10;
 
+html
+{
+    font-size: 125%;
+}
+
 @mixin font($size, $family)
 {
-    font-size: $size + px;
-    $viewport: ($size / 30) + vw;
-    $min-px: ($size / 1.7) + px;
-    font-size: calc( #{$viewport} + #{$min-px});
+    font-size: ($size / 20) + px;
+    font-size: ($size / 20) + rem;
     font-family: $family;
-    line-height: 1.5rem;
+    line-height: 1.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {

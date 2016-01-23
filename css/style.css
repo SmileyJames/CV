@@ -1,47 +1,50 @@
+html {
+  font-size: 125%; }
+
 h1, h2, h3, h4, h5, h6 {
   margin: 0 0 1em 0; }
 
 h1 {
-  font-size: 33px;
-  font-size: calc( 1.1vw + 19.41176px);
+  font-size: 1.65px;
+  font-size: 1.65rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 h2 {
-  font-size: 30px;
-  font-size: calc( 1vw + 17.64706px);
+  font-size: 1.5px;
+  font-size: 1.5rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 h3 {
-  font-size: 25px;
-  font-size: calc( 0.83333vw + 14.70588px);
+  font-size: 1.25px;
+  font-size: 1.25rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 h4 {
-  font-size: 22px;
-  font-size: calc( 0.73333vw + 12.94118px);
+  font-size: 1.1px;
+  font-size: 1.1rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 h5 {
-  font-size: 20px;
-  font-size: calc( 0.66667vw + 11.76471px);
+  font-size: 1px;
+  font-size: 1rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 h6 {
-  font-size: 18px;
-  font-size: calc( 0.6vw + 10.58824px);
+  font-size: 0.9px;
+  font-size: 0.9rem;
   font-family: "Raleway", sans-serif;
-  line-height: 1.5rem; }
+  line-height: 1.5em; }
 
 p, dl {
-  font-size: 14px;
-  font-size: calc( 0.46667vw + 8.23529px);
+  font-size: 0.7px;
+  font-size: 0.7rem;
   font-family: "Roboto", sans-serif;
-  line-height: 1.5rem;
+  line-height: 1.5em;
   margin: 0 0 1em 0; }
 
 * {
@@ -64,6 +67,12 @@ section {
   margin: 5rem 0;
   background-color: white;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
+  @media all and (max-width: 800px) {
+    section {
+      padding: 5rem calc(10% + 1.5rem); } }
+  @media all and (max-width: 450px) {
+    section {
+      padding: 5rem calc(5% + 1.5rem); } }
 
 section:first-child {
   margin-top: 55vh; }
@@ -80,6 +89,12 @@ section:last-child {
   bottom: 3rem;
   background-color: white;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+  @media all and (max-width: 800px) {
+    .center-strip {
+      width: 80%; } }
+  @media all and (max-width: 450px) {
+    .center-strip {
+      width: 90%; } }
 
 #background-svg {
   position: absolute;
