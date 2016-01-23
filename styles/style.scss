@@ -1,0 +1,82 @@
+@import "paper";
+@import "content";
+@import "typography";
+
+* {
+    position: relative;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+}
+
+section {
+    width: 100%;
+    padding: 5rem calc(25% + 1.5rem);
+    margin: 5rem 0;
+    background-color: white;
+    @include paper(2);
+}
+
+$colour-top: 55vh;
+$header-height: 15rem;
+
+section:first-child {
+    margin-top: $colour-top;
+}
+
+section:last-child {
+    margin-bottom: 10rem;
+}
+
+.center-strip {
+    position: absolute;
+    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(#{$colour-top} - #{$header-height});
+    bottom: 3rem;
+    background-color: white;
+    @include paper(1);
+}
+
+#background-svg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    overflow: hidden;
+    height: $header-height;
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+.title {
+    margin: 0;
+    text-align: center;
+}
+
+.intro {
+    text-align: center;
+}

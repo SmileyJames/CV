@@ -1,0 +1,62 @@
+$header-font: "Raleway", sans-serif;
+$text-font: "Roboto", sans-serif;
+
+$ent: 33;
+$troll: 30;
+$elf: 25;
+$wizard: 22;
+$man: 20;
+$orc: 18;
+$dwarf: 14;
+$hobbit: 12;
+$goblin: 10;
+
+@mixin font($size, $family)
+{
+    font-size: $size + px;
+    $viewport: ($size / 30) + vw;
+    $min-px: ($size / 1.7) + px;
+    font-size: calc( #{$viewport} + #{$min-px});
+    font-family: $family;
+    line-height: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 1em 0;
+}
+
+h1
+{
+    @include font($ent, $header-font);
+}
+
+h2
+{
+    @include font($troll, $header-font);
+}
+
+h3
+{
+    @include font($elf, $header-font);
+}
+
+h4
+{
+    @include font($wizard, $header-font);
+}
+
+h5
+{
+    @include font($man, $header-font);
+}
+
+h6
+{
+    @include font($orc, $header-font);
+}
+
+p, dl
+{
+    @include font($dwarf, $text-font);
+    margin: 0 0 1em 0;
+}
