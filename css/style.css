@@ -1,0 +1,111 @@
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1em 0; }
+
+h1 {
+  font-size: 33px;
+  font-size: calc( 1.1vw + 19.41176px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+h2 {
+  font-size: 30px;
+  font-size: calc( 1vw + 17.64706px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+h3 {
+  font-size: 25px;
+  font-size: calc( 0.83333vw + 14.70588px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+h4 {
+  font-size: 22px;
+  font-size: calc( 0.73333vw + 12.94118px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+h5 {
+  font-size: 20px;
+  font-size: calc( 0.66667vw + 11.76471px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+h6 {
+  font-size: 18px;
+  font-size: calc( 0.6vw + 10.58824px);
+  font-family: "Raleway", sans-serif;
+  line-height: 1.5rem; }
+
+p, dl {
+  font-size: 14px;
+  font-size: calc( 0.46667vw + 8.23529px);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  margin: 0 0 1em 0; }
+
+* {
+  position: relative;
+  box-sizing: border-box; }
+
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0; }
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden; }
+
+section {
+  width: 100%;
+  padding: 5rem calc(25% + 1.5rem);
+  margin: 5rem 0;
+  background-color: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
+
+section:first-child {
+  margin-top: 55vh; }
+
+section:last-child {
+  margin-bottom: 10rem; }
+
+.center-strip {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  top: calc(55vh - 15rem);
+  bottom: 3rem;
+  background-color: white;
+  box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
+
+#background-svg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%; }
+
+header {
+  overflow: hidden;
+  height: 15rem; }
+
+.header-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%; }
+
+.title {
+  margin: 0;
+  text-align: center; }
+
+.intro {
+  text-align: center; }
+
+/*# sourceMappingURL=style.css.map */
