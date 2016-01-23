@@ -85,7 +85,7 @@ section:last-child {
   width: 50%;
   left: 50%;
   transform: translateX(-50%);
-  top: calc(55vh - 15rem);
+  top: 25vh;
   bottom: 3rem;
   background-color: white;
   box-shadow: 0 1.5px 4px rgba(0, 0, 0, 0.24), 0 1.5px 6px rgba(0, 0, 0, 0.12); }
@@ -108,7 +108,7 @@ section:last-child {
 
 header {
   overflow: hidden;
-  height: 15rem; }
+  height: 30vh; }
 
 .header-content {
   position: absolute;

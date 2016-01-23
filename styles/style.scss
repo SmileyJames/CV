@@ -38,7 +38,7 @@ section {
 }
 
 $colour-top: 55vh;
-$header-height: 15rem;
+$header-height: 30vh;
 
 section:first-child {
     margin-top: $colour-top;
@@ -53,7 +53,7 @@ section:last-child {
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: calc(#{$colour-top} - #{$header-height});
+    top: $colour-top - $header-height;
     bottom: 3rem;
     background-color: white;
     @include paper(1);
