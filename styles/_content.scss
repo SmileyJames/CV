@@ -1,0 +1,29 @@
+a {
+    text-decoration: none;
+
+    &:hover, &:active {
+        text-decoration: underline;
+    }
+}
+
+p#email {
+    text-align: center;
+    line-height: 2em;
+
+    > img {
+        vertical-align: middle;
+    }
+}
+
+.left-column, .right-column {
+    width: 50%;
+    padding-right: 1em;
+}
+
+.left-column {
+    float: left;
+}
+
+.right-column {
+    float: right;
+}

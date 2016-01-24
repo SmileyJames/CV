@@ -25,6 +25,7 @@ section {
     padding: 5rem calc(25% + 1.5rem);
     margin: 5rem 0;
     background-color: white;
+    overflow: auto;
     @include paper(2);
 
     @include media($milli) {
@@ -32,7 +33,8 @@ section {
     }
 
     @include media($micro) {
-        padding: 5rem calc(5% + 1.5rem);
+        padding: 3rem calc(5% + 1.5rem);
+        margin: 3rem 0;
     }
 
 }
@@ -46,6 +48,10 @@ section:first-child {
 
 section:last-child {
     margin-bottom: 10rem;
+
+    @include media($micro) {
+        margin-bottom: 5rem;
+    }
 }
 
 .center-strip {

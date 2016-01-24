@@ -1,3 +1,24 @@
+a {
+  text-decoration: none; }
+  a:hover, a:active {
+    text-decoration: underline; }
+
+p#email {
+  text-align: center;
+  line-height: 2em; }
+  p#email > img {
+    vertical-align: middle; }
+
+.left-column, .right-column {
+  width: 50%;
+  padding-right: 1em; }
+
+.left-column {
+  float: left; }
+
+.right-column {
+  float: right; }
+
 html {
   font-size: 125%; }
 
@@ -34,7 +55,7 @@ h5 {
   font-family: "Raleway", sans-serif;
   line-height: 1.5em; }
 
-h6 {
+h6, dt {
   font-size: 0.9px;
   font-size: 0.9rem;
   font-family: "Raleway", sans-serif;
@@ -66,19 +87,24 @@ section {
   padding: 5rem calc(25% + 1.5rem);
   margin: 5rem 0;
   background-color: white;
+  overflow: auto;
   box-shadow: 0 3px 12px rgba(0, 0, 0, 0.23), 0 3px 12px rgba(0, 0, 0, 0.16); }
   @media all and (max-width: 800px) {
     section {
       padding: 5rem calc(10% + 1.5rem); } }
   @media all and (max-width: 450px) {
     section {
-      padding: 5rem calc(5% + 1.5rem); } }
+      padding: 3rem calc(5% + 1.5rem);
+      margin: 3rem 0; } }
 
 section:first-child {
   margin-top: 55vh; }
 
 section:last-child {
   margin-bottom: 10rem; }
+  @media all and (max-width: 450px) {
+    section:last-child {
+      margin-bottom: 5rem; } }
 
 .center-strip {
   position: absolute;

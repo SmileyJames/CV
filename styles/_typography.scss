@@ -53,7 +53,7 @@ h5
     @include font($man, $header-font);
 }
 
-h6
+h6, dt
 {
     @include font($orc, $header-font);
 }
