@@ -1,2 +1,2 @@
-# CV Repo
-This is the repo for my CV, visit the site [here](example.com)
+# CV
+This is work in progress and far from complete, visit the site [here](https://cv.james-o.tools)
